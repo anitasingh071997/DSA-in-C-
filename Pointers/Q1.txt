@@ -1,0 +1,23 @@
+/*POINTERS QUESTIONS*/
+
+#include <iostream>
+using namespace std;
+int main() {
+    int i=6;
+    int *p=&i;
+    int **q=&p;
+    cout<<"Value of i : "<<i<<endl;
+    cout<<"Address of i : "<<&i<<endl;
+    
+    cout<<"Value of P : "<<p<<endl;
+    cout<<"Address of &P : "<<&p<<endl;
+    cout<<"Value of *p : "<<*p<<endl;
+    
+    cout<<"Value of q : "<<q<<endl;
+    cout<<"Address of &q : "<<&q<<endl;
+    cout<<"Value of *q : "<<*q<<endl;     //address of p
+    cout<<"Value of **q : "<<**q<<endl;   //value of q=6
+    
+
+    return 0;
+}

@@ -1,0 +1,18 @@
+/*Pointer to pointer*/
+#include <iostream>
+using namespace std;
+int main() {
+    int a=8;
+    cout<<&a<<endl; //0x7ffd31469d2c
+    int *ptr=&a;
+    cout<<ptr<<endl; //0x7ffd31469d2c
+    cout<<&ptr<<endl; //0x7ffd31469d20
+    cout<<*ptr<<endl; //8
+    
+    int **q=&ptr;
+    cout<<q<<endl; //0x7ffd31469d20
+    cout<<&q<<endl; //0x7ffd31469d18
+    cout<<*q<<endl; //0x7ffd31469d2c
+    cout<<**q<<endl; //8
+    return 0;
+}
