@@ -1,0 +1,10 @@
+//Access global and local variable
+#include <iostream>
+
+using namespace std;
+    int p=10;
+    int main() {
+        int p=7;
+        cout<<p<<endl;
+        cout<<::p;
+    }

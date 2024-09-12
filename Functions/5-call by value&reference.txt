@@ -1,0 +1,72 @@
+//Call by value
+#include <iostream>
+
+using namespace std;
+    void square(int num1){
+         num1=num1*num1;
+         cout<<"Value in function : "<<num1<<endl;
+    }
+    int main() {
+        int a=5;
+        square(a);
+        cout<<"Value in main function : "<<a<<endl;
+        return 0;
+    }
+
+
+//call by reference
+#include <iostream>
+
+using namespace std;
+    void square(int num1){
+         num1=num1*num1;
+         cout<<"Value in function : "<<num1<<endl;
+    }
+    int main() {
+        int a=5;
+        square(a);
+        cout<<"Value in main function : "<<a<<endl;
+        return 0;
+    }
+
+
+//call by value in swapping
+#include <iostream>
+
+using namespace std;
+    void swap(int a , int b){
+         int temp = a;
+         a=b;
+         b=temp;
+         cout<<"a : "<<a<<endl;
+         cout<<"b : "<<b<<endl;
+    }
+    int main() {
+        int x=7,y=10;
+        
+        swap(x,y);
+        cout<<"X :"<<x<<endl;
+        cout<<"Y :"<<y<<endl;
+        return 0;
+    }
+
+
+//call by reference in swapping
+#include <iostream>
+
+using namespace std;
+    void swap(int &a , int &b){
+         int temp = a;
+         a=b;
+         b=temp;
+         cout<<"a : "<<a<<endl;
+         cout<<"b : "<<b<<endl;
+    }
+    int main() {
+        int x=7,y=10;
+        
+        swap(x,y);
+        cout<<"X :"<<x<<endl;
+        cout<<"Y :"<<y<<endl;
+        return 0;
+    }

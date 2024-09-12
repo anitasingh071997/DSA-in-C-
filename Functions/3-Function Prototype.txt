@@ -1,0 +1,15 @@
+//Addition of two numbers using functions(Function Prototype)
+
+#include <iostream>
+using namespace std;
+int add(int num1,int num2);
+int main() {
+    //int a=5;
+    //int b=5;
+    cout<<add(5,-1);
+    return 0;
+}
+int add(int num1, int num2){
+     int sum=num1+num2;
+     return sum;
+}
