@@ -1,0 +1,33 @@
+/structure taking input from user
+#include<iostream>
+#include<string>
+using namespace std;
+// define the structure
+struct Student {
+    string name;
+    int rollNo;
+    int age;
+};
+
+int main() {
+    // create 2 instances of the structure
+    Student student1;
+    Student student2;
+
+    // get input for the first student
+    cout << "Enter name, roll no., and age for the first student: ";
+    cin >> student1.name >> student1.rollNo >> student1.age;
+
+    // get input for the second student
+    cout << "Enter name, roll no., and age for the second student: ";
+    cin >> student2.name >> student2.rollNo >> student2.age;
+
+    // display the details of the two students
+    cout << "Details of the first student:"<<endl;
+    cout << "Name: " << student1.name << ", Roll No: " << student1.rollNo << ", Age: " << student1.age <<endl;
+
+    cout << "Details of the second student:" <<endl;
+    cout << "Name: " << student2.name << ", Roll No: " << student2.rollNo << ", Age: " << student2.age <<endl;
+
+    return 0;
+}

@@ -1,0 +1,20 @@
+//structure user defined
+
+#include<iostream>
+#include<string>
+
+struct Student {
+    std::string name;
+    int rollNo;
+    int age;
+};
+
+int main() {
+    Student student1 = {"Alice", 1, 22};
+    Student student2 = {"Bob", 2, 23};
+
+    std::cout << "Name: " << student1.name << ", Roll No: " << student1.rollNo << ", Age: " << student1.age << std::endl;
+    std::cout << "Name: " << student2.name << ", Roll No: " << student2.rollNo << ", Age: " << student2.age << std::endl;
+
+    return 0;
+}
